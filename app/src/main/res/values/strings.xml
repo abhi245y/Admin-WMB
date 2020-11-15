@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Admin(WMB)</string>
+    <string name="add_remove_bus_details">Add/Remove Bus Details</string>
+    <string name="bus_number">Bus Number</string>
+    <string name="where_is_my_bus_admin">Where is My Bus Admin</string>
+    <string name="email_id">Email Id</string>
+    <string name="login">Login</string>
+    <string name="enter_bus_type">Enter Bus Type</string>
+    <string name="enter_bus_stops">Enter Bus Stops</string>
+    <string name="add_stops">Add Stops</string>
+    <string name="remove_stop">Remove Stop</string>
+    <string name="title_activity_add_stops_map">Map</string>
+    <string name="search_for_place">Search for place</string>
+    <string name="selected_location_details">Selected Location Details</string>
+    <string name="latlang">LatLang:</string>
+    <string name="latlang_of_slected_location">Latlang of slected Location</string>
+    <string name="google_places_api">AIzaSyAMEheHNnGaUMwWqzDU1NGRPl64eNKDSmw</string>
+    <string name="name">Name:</string>
+    <string name="name_of_the_location">Name of the location</string>
 </resources>

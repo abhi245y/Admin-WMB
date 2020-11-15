@@ -1,31 +1,34 @@
-package com.example.adminwmb;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.abhi245y.adminwmb;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AdminPanel extends AppCompatActivity {
 
-
-    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_panel);
 
-        mAuth = FirebaseAuth.getInstance();
+        CoordinatorLayout coordinatorLayout;
+        coordinatorLayout = findViewById(R.id.admin_panel);
+        Snackbar snackbar1 = Snackbar.make(coordinatorLayout, "Welcome Boss", Snackbar.LENGTH_SHORT);
+        snackbar1.show();
 
         Button mLogout =  findViewById(R.id.logout);
         mLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseAuth.getInstance().signOut();//firebase command to sign out
+                FirebaseAuth.getInstance().signOut();
                 Intent intent =new Intent(AdminPanel.this,MainActivity.class);
                 startActivity(intent);
                 finish();
@@ -35,15 +38,14 @@ public class AdminPanel extends AppCompatActivity {
 
     public void addRemoveBus(View v){
 
-        Intent intent= new Intent(AdminPanel.this,AddRemoveBus.class);
-        startActivity(intent);
-        finish();
+       Intent intent = new Intent(AdminPanel.this,EditBusDetails.class);
+       startActivity(intent);
+
     }
 
-    public void  addRemoveStops(View v){
+    public void StopMaps(View view) {
 
-        Intent intent =new Intent(AdminPanel.this,AddRemoveStopes.class);
+        Intent intent =new Intent(AdminPanel.this,AddStopsMap.class);
         startActivity(intent);
-        finish();
     }
 }
