@@ -14,7 +14,7 @@
     <string name="selected_location_details">Selected Location Details</string>
     <string name="latlang">LatLang:</string>
     <string name="latlang_of_slected_location">Latlang of slected Location</string>
-    <string name="google_places_api">AIzaSyAMEheHNnGaUMwWqzDU1NGRPl64eNKDSmw</string>
+    <string name="google_places_api"></string>
     <string name="name">Name:</string>
     <string name="name_of_the_location">Name of the location</string>
 </resources>
