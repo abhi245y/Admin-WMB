@@ -53,7 +53,7 @@ import java.util.List;
 public class AddStopsMap extends FragmentActivity implements OnMapReadyCallback {
 
     private static final int AUTOCOMPLETE_REQUEST_CODE = 123;
-    public static final String PLACES_API = "AIzaSyAMEheHNnGaUMwWqzDU1NGRPl64eNKDSmw";
+    public static final String PLACES_API = "";
     public static final String TAG = "AddStopsMap";
     private GoogleMap mMap;
     private TextView latLngText, stop_name_text, bus_name_text;
